@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="shortcut icon" href="assets/images/gt_favicon.png">
+<link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="assets/css/bootstrap-theme.css" media="screen" >
+<link rel="stylesheet" href="assets/css/main.css">
+
+
+  <title>First steps</title>
+</head>
+
+<body>
+	<div class="navbar navbar-inverse navbar-fixed-top headroom" >
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+			<a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="Progressus HTML5 template"></a>
+		</div>
+		<div class="navbar-collapse collapse">
+			<ul class="nav navbar-nav pull-right">
+				<li class="active"><a href="/#">Home</a></li>
+				<li><a href="https://skydive-project.github.io/skydive/">Documentation</a></li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Tutorials <b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li><a href="first-steps-1.html">First steps with Skydive</a></li>
+					</ul>
+				</li>
+				<li><a href="https://github.com/skydive-project/skydive">GitHub</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+
+	<header id="head" class="secondary"></header>
+
+	<div class="container">
+		<ol class="breadcrumb">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="first-steps-1.html">First steps</a></li>
+      <li class="active">Traffic capture</li>
+		</ol>
+
+		<div class="row">
+
+			<!-- Article main content -->
+			<article class="col-md-8 maincontent">
+				<header class="page-header">
+				  <h1 class="page-title">Traffic capture</h1>
+				</header>
+
+				<p>For this second part we will introduce the traffic capture capabilities of Skydive.</p>
+<h2>First capture</h2>
+<p>
+  Even if Skydive come with a Rest API and a client allowing us to create captures we will use the WebUI as it is the easiest way to start playing
+  with traffic captures. The following tiny video shows how to start a simple capture with default options on an interface.
+</p>
+
+<p>
+  <video id="nsc_stream_video" poster="" preload="" controls="" autoplay="" loop="" controlslist="nodownload" src="assets/videos/first-steps/capture-1.webm"></video>
+<p>
+
+<p>
+  Once the capture is started the interface captured get a `red point` marking that the capture is active. Then you can go to the right panel and click on the
+  flow refresh button to see active flows.
+</p>
+
+<p>
+  To get more details about flow a simple click on it will display them. We won't detail here all the fields as it will
+  the subject of another part but TrackingID and L3TrackingID are constant ID for a flow across multiple interfaces while UUID is the ID for the flow at this
+  specific point of capture.
+</p>
+
+<p>
+  As showed in the following video there are ways to filter, sort flows or select specific fields that will be displayed.
+</p>
+
+<p>
+  <video id="nsc_stream_video" poster="" preload="" controls="" autoplay="" loop="" controlslist="nodownload" src="assets/videos/first-steps/capture-2.webm"></video>
+<p>
+</p></p></p></p>
+
+			</article>
+
+			<aside class="col-md-4 sidebar sidebar-right">
+        <div class="row widget">
+          <div class="col-xs-12">
+            <h4><a href="first-steps-1.html">Getting started</a></h4>
+            <p>For this first article we will see how it is easy to start Skydive and how to explore the topology thanks to the WebUI and the command line.</p>
+          </div>
+        </div>
+        <div class="row widget">
+          <div class="col-xs-12">
+            <h4><a href="first-steps-2.html">Traffic capture</a></h4>
+            <p>For this second part we will introduce the traffic capture capabilities of Skydive.</p>
+          </div>
+        </div>
+        <div class="row widget">
+          <div class="col-xs-12">
+            <h4><a href="first-steps-3.html">Traffic capture, multiple interfaces</a></h4>
+            <p>In this third part will see how to create a capture matching multiple interfaces and how to follow a flow along a path.</p>
+          </div>
+        </div>
+			</aside>
+
+		</div>
+	</div>
+
+	<!-- Social links. @TODO: replace by link/instructions in template -->
+<section id="social">
+	<div class="container">
+		<div class="wrapper clearfix">
+			<div class="addthis_toolbox addthis_default_style">
+				<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+				<a class="addthis_button_tweet"></a>
+				<a class="addthis_button_linkedin_counter"></a>
+				<a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- /social links -->
+
+<footer id="footer" class="top-space">
+	<div class="footer1">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 widget">
+					<h3 class="widget-title">Contact</h3>
+					<div class="widget-body">
+						<p>
+							Mailing list: skydive-dev@redhat.com<br>
+							<br>
+							IRC: #skydive-project on irc.freenode.net
+						</p>
+					</div>
+				</div>
+
+				<div class="col-md-3 widget">
+					<h3 class="widget-title">Follow Skydive</h3>
+					<div class="widget-body">
+						<p class="follow-me-icons">
+							<a href="https://twitter.com/skydive_project"><i class="fa fa-twitter fa-2"></i></a>
+							<a href="https://github.com/skydive-project"><i class="fa fa-github fa-2"></i></a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer2">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 widget">
+					<div class="widget-body">
+						<p class="simplenav">
+							<a href="/#">Home</a> |
+							<a href="/#about">About</a>
+						</p>
+					</div>
+				</div>
+
+				<div class="col-md-6 widget">
+					<div class="widget-body">
+						<p class="text-right">
+							Copyright &copy; 2017, Red Hat. Designed by <a href="http://gettemplate.com/" rel="designer">gettemplate</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="assets/js/headroom.min.js"></script>
+<script src="assets/js/jQuery.headroom.min.js"></script>
+<script src="assets/js/template.js"></script>
+
+
+</body>
+</html>
